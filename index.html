@@ -30,9 +30,9 @@
             <h1><a href=""><img src="assets/digiseg_logo.png" alt="DIGISEG"></a></h1>
             <nav class="menu">
                 <ul>
-                    <li><a href="serviços"><i class="fa-solid fa-gear"></i>Produtos e Serviços</a></li>
+                    <li><a href="#servicos"><i class="fa-solid fa-gear"></i>Produtos e Serviços</a></li>
                     <li><a href="#sobre"><i class="fa-solid fa-circle-info"></i>Quem Somos</a></li>
-                    <li><a href="#sobre"><i class="fa-solid fa-user"></i>Clientes</a></li>
+                    <li><a href="#clientes"><i class="fa-solid fa-user"></i>Clientes</a></li>
                     <li><a href="#contato" class="btn-hire"><i class="fa-solid fa-phone"></i>Contato</a></li>
                 </ul>
                 <span class="toggle-menu" aria-label="Abrir/Fechar Menu"><i class="fa-solid fa-bars"></i></span>
@@ -57,7 +57,7 @@
             <section id="servicos">
                 <div class="container">
                     <div>
-                        <h2>Nossos Serviços</h2>
+                        <h3>Nossos Serviços</h3>
                         <p>Na DIGISEG RJ, oferecemos uma gama de produtos e serviços de segurança digital, incluindo:</p>
                     </div>
                     <ul class="mini-items">
@@ -81,7 +81,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" data-bg="assets/servicos/monitoramento.jpg">
+                        <a href="" data-bg="assets/servicos/controleacesso.jpg">
                             <div class="mini-item">
                                 <i class="fa-solid fa-key"></i>
                                 <p>Controle de Acesso</p>
@@ -91,7 +91,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" data-bg="assets/servicos/monitoramento.jpg">
+                        <a href="" data-bg="assets/servicos/automacoes.jpg">
                             <div class="mini-item">
                                 <i class="fa-solid fa-door-open"></i>
                                 <p>Automações</p>
@@ -105,27 +105,70 @@
                 </div>
 
             </section>
+            
+            <section id="clientes" style="background-color: #0a0a0a;">
+                <div class="container" style="overflow: hidden;">
+                    <h3>Clientes</h3>
+                    <p>Veja nossas áreas de atuação</p>
+                    <div class="carousel-track" id="carouselTrack">
+                        <img src="assets/clientes/eletrobraseletronuclear.png" alt="Cliente 4" class="client-logo">
+                        <img src="assets/clientes/eletrobrasfurnas.png" alt="Cliente 2" class="client-logo">
+                        <img src="assets/clientes/ipanemahotelresidencia.png" alt="Cliente 3" class="client-logo">
+                        <img src="assets/clientes/clubedeengenhariarj.png" alt="Cliente 1" class="client-logo"> 
+                        <img src="assets/clientes/estadorj.png" alt="Cliente 5" class="client-logo">
+                    </div>
+                </div>
+            </section>
 
-            <section id="sobre">
+            <section id="sobre" style="background-image: url('assets/rj.jpg'); background-size: cover;  background-blend-mode: overlay; backdrop-filter: blur(5px);">
                 <div class="container">
-                    <h2>Melhor atuação na cidade do Rio de Janeiro!</h2>
+                    <h3>Melhor atuação na cidade do Rio de Janeiro!</h3>
                     <p>Veja nossas áreas de atuação</p>
                     <br>
-                    <img src="assets/rj_map.png" alt="Mapa Rio de Janeiro" class="sect-img">
-                    <p><i>Disponibilidade em toda a Zona Sul, Centro, Barra da Tijuca, Grande Tijuca, Freguesia(Jacarepaguá)</i></p>
+                    <!--img src="assets/rj_map.png" alt="Mapa Rio de Janeiro" class="sect-img"-->
+                    <div class="items-desc">
+                        <div class="item-desc">
+                            <img src="assets/zonasul.png" alt="">
+                            <p>Zona Sul</p>
+                        </div>
+                        <div class="item-desc">
+                            <img src="assets/centro.png" alt="">
+                            <p>Centro</p>
+                        </div>
+                        <div class="item-desc">
+                            <img src="assets/tijuca.png" alt="">
+                            <p>Barra e Grande Tijuca</p>
+                        </div>
+                        <div class="item-desc">
+                            <img src="assets/freguesia.png" alt="">
+                            <p>Freguesia (Jacarepaguá)</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section id="contato">
                 <div>
-                    <h2>Quem Somos</h2>
+                    <h3>Quem Somos</h3>
                     <p>A DIGISEG RJ é uma empresa especializada em segurança digital, oferecendo soluções inovadoras para proteger dados e sistemas. Com uma equipe de especialistas, garantimos a integridade e confidencialidade das informações dos nossos clientes.</p>
                 </div>
             </section>
         </main>
         <footer>
-            <div>
-                <p>&copy; 2007 - <span id="actual_year"></span>, DIGISEG RJ - Segurança Digital. Todos os direitos reservados.</p>
+            <div class="footer-blocks">
+                <a href=""><img style="max-width: 40vh; filter: contrast(0%);" src="assets/digiseg_logo.png" alt="DIGISEG"></a>
+                <p><i>&copy; 2007 - <span id="actual_year"></span>, DIGISEG RJ - Segurança Digital. Todos os direitos reservados.</i></p>
+                <br>
+                <p><b>CONTATO</b></p>
+                <p><i class="fa-brands fa-whatsapp"></i> WhatsApp: (21) 96489-5859</p>
+                <p><i class="fa-solid fa-envelope"></i> E-Mail: comercial@digiseg.com.br</p>
+                <br>
+                <p><b>REDES SOCIAIS</b></p>
+                <div class="networks">
+                    <a href="insta" class=""><i class="fa-brands fa-instagram"></i></a>   
+                    <a href="face" class=""><i class="fa-brands fa-facebook"></i></a>   
+                    <a href="zap" class=""><i class="fa-brands fa-whatsapp"></i></a>   
+                </div>
             </div>
             <script>
                 const actualYear = new Date().getFullYear();

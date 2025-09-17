@@ -21,3 +21,12 @@ if (containers.length > 0) {
 } else {
   console.error("No 'container' elements found!");
 }
+
+const track = document.getElementById('carouselTrack');
+const logos = Array.from(track.children);
+
+// Clona os logos uma vez para criar o loop
+logos.forEach(logo => {
+  const clone = logo.cloneNode(true);
+  track.appendChild(clone);
+});
