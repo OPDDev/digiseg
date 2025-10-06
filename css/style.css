@@ -53,6 +53,7 @@ header{
   padding: 10px 0;
   backdrop-filter: blur(10px);
   transition: all 0.4s ease-in-out;
+  font-weight: bold;
 }
 
 header.activeh{
@@ -236,6 +237,7 @@ section {
   display: inline-flex;
   width: 100%;
   font-size: 20px;
+  justify-content: center;
 }
 
 .mini-item{
@@ -281,12 +283,17 @@ section {
   transition: all 0.2s ease-in-out;
 }
 
+#contato .container{
+  display: flex;
+}
+
 footer {
   background-color: #1a1a1a;
   color: #fff;
   text-align: center;
   padding: 20px 0;
   display: flex;
+  flex-direction: row-reverse;
 }
 
 .footer-blocks{
@@ -294,6 +301,27 @@ footer {
   width: 50%;
   text-align: left;
   margin: 10vh;
+}
+
+.footer-links{
+  font-size: 15px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer-links li{
+  border-bottom: solid 1px;
+  margin: 5px;
+}
+
+.footer-links li:hover{
+  background-color: #94949463;
+}
+
+.footer-links a{
+  color: white;
+  display: flex;
+  padding: 2px 4px;
 }
 
 .networks{
@@ -319,10 +347,7 @@ footer {
 .carousel-container {
   width: 100%;
   overflow: hidden;
-  background: #fff;
   padding: 20px 0;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
 }
 
 .carousel-track {
@@ -352,7 +377,7 @@ footer {
 }
 
 .item-desc {
-  flex: 1 1 200px;
+  flex: 1 1 150px;
   background-color: #1a1a1a;
   max-width: 50%;
   margin: 10px;
@@ -445,5 +470,16 @@ footer {
   .mini-item-lm {
     font-size: 12px;
     margin-top: 4px;
+  }
+  #contato .container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  footer{
+    display: block;
+  }
+  .footer-blocks{
+    width: 100%;
+    margin: 10vh 0;
   }
 }

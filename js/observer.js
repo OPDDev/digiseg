@@ -30,3 +30,7 @@ logos.forEach(logo => {
   const clone = logo.cloneNode(true);
   track.appendChild(clone);
 });
+logos.forEach(logo => {
+  const clone = logo.cloneNode(true);
+  track.appendChild(clone);
+});
